@@ -3,8 +3,7 @@ stages:
   - lint-js
   - unit-test
 
-images: node:6.11.2-alpine
-pull_policy: if-not-present
+image: node:6.11.2-alpine
 
 before_script:
   - npm install
