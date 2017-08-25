@@ -3,7 +3,7 @@ stages:
   - lint-js
   - unit-test
 
-image: node:6.11.2-alpine
+image: node:6.11.2
 
 
 lint css:
