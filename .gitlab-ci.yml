@@ -1,0 +1,31 @@
+stages:
+  - lint-css
+  - lint-js
+  - unit-test
+
+images: node:6.11.2-alpine
+pull_policy: if-not-present
+
+before_script:
+  - npm install
+
+lint css:
+  stage: lint-css
+  only:
+    - master
+  script:
+    - gulp lint-css
+
+lint js:
+  stage: lint-js
+  only:
+    - master
+  script:
+    - gulp lint-js
+
+run unit test:
+  stage: unit-test
+  only:
+    - master
+  script:
+    - gulp test
