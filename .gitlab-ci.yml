@@ -15,7 +15,7 @@ lint css:
   only:
     - master
   script:
-    - ./node_modules/gulp/bin/gulp lint-css
+    - ./node_modules/gulp/bin/gulp.js lint-css
 
 lint js:
   stage: lint-js
@@ -25,7 +25,7 @@ lint js:
   only:
     - master
   script:
-    - ./node_modules/gulp/bin/gulp lint-js
+    - ./node_modules/gulp/bin/gulp.js lint-js
 
 run unit test:
   stage: unit-test
@@ -35,4 +35,4 @@ run unit test:
   only:
     - master
   script:
-    - ./node_modules/gulp/bin/gulp test
+    - ./node_modules/gulp/bin/gulp.js test
